@@ -2,7 +2,7 @@
 lab:
     title: 'Lab B: Managing virtual networks by using Windows Admin Center and PowerShell'
     type: 'Answer Key'
-    module: 'Module 4:Planning for and Implementing Azure Stack HCI Networking'
+    module: 'Module 4: Planning for and Implementing Azure Stack HCI Networking'
 ---
 # Lab B answer key: Managing virtual networks by using Windows Admin Center and PowerShell
 

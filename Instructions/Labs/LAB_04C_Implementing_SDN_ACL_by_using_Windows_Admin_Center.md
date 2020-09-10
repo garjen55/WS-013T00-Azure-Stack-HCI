@@ -1,7 +1,7 @@
 ﻿---
 lab:
     title: 'Lab C: Implementing SDN Access Control List by using Windows Admin Center'
-    module: 'Module 4:Planning for and Implementing Azure Stack HCI Networking'
+    module: 'Module 4: Planning for and Implementing Azure Stack HCI Networking'
 ---
 # Lab C: Implementing SDN Access Control List by using Windows Admin Center
 

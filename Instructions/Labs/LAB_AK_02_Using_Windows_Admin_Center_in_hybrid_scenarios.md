@@ -2,7 +2,7 @@
 lab:
     title: 'Lab: Using Windows Admin Center in hybrid scenarios'
     type: 'Answer Key'
-    module: 'Module 2:Operating and maintaining Azure Stack HCI'
+    module: 'Module 2: Operating and maintaining Azure Stack HCI'
 ---
 # Lab answer key: Using Windows Admin Center in hybrid scenarios
 

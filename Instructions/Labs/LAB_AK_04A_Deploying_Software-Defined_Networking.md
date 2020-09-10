@@ -2,7 +2,7 @@
 lab:
     title: 'Lab A: Deploying Software-Defined Networking'
     type: 'Answer Key'
-    module: 'Module 4:Planning for and Implementing Azure Stack HCI Networking'
+    module: 'Module 4: Planning for and Implementing Azure Stack HCI Networking'
 ---
 # Lab A answer key: Deploying Software-Defined Networking
 

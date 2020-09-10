@@ -1,7 +1,7 @@
 ﻿---
 lab:
     title: 'Lab A: Deploying Software-Defined Networking'
-    module: 'Module 4:Planning for and Implementing Azure Stack HCI Networking'
+    module: 'Module 4: Planning for and Implementing Azure Stack HCI Networking'
 ---
 
 # Lab A: Deploying Software-Defined Networking

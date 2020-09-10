@@ -1,7 +1,7 @@
 ---
 lab:
     title: 'Lab: Using Windows Admin Center in hybrid scenarios'
-    module: 'Module 2:Operating and maintaining Azure Stack HCI'
+    module: 'Module 2: Operating and maintaining Azure Stack HCI'
 ---
 
 # Lab: Using Windows Admin Center in hybrid scenarios
