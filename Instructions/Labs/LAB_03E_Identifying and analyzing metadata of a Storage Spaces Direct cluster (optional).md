@@ -1,9 +1,9 @@
 ﻿---
 lab:
-    title: 'Lab F: Identifying and analyzing metadata of a Storage Spaces Direct cluster (optional)'
+    title: 'Lab E: Identifying and analyzing metadata of a Storage Spaces Direct cluster (optional)'
     module: 'Module 3: Planning for and implementing Azure Stack HCI Storage'
 ---
-# Lab F: Identifying and analyzing metadata of a Storage Spaces Direct cluster (optional)
+# Lab E: Identifying and analyzing metadata of a Storage Spaces Direct cluster (optional)
 
 ## Scenario
 

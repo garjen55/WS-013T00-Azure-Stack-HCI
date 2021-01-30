@@ -1,9 +1,9 @@
 ---
 lab:
-    title: 'Lab C: Managing storage of a Storage Spaces Direct cluster by using Windows Admin Center and Windows PowerShell'
+    title: 'Lab B: Managing storage of a Storage Spaces Direct cluster by using Windows Admin Center and Windows PowerShell'
     module: 'Module 3: Planning for and implementing Azure Stack HCI Storage'
 ---
-# Lab C: Managing storage of a Storage Spaces Direct cluster by using Windows Admin Center and Windows PowerShell
+# Lab B: Managing storage of a Storage Spaces Direct cluster by using Windows Admin Center and Windows PowerShell
 
 ## Scenario
 

@@ -1,10 +1,10 @@
 ---
 lab:
-    title: 'Lab B: Implementing a Storage Spaces Direct cluster by using Windows PowerShell'
+    title: 'Lab A: Implementing a Storage Spaces Direct cluster by using Windows PowerShell'
     type: 'Answer Key'
     module: 'Module 3: Planning for and implementing Azure Stack HCI Storage'
 ---
-# Lab B answer key: Implementing a Storage Spaces Direct cluster by using Windows PowerShell
+# Lab A answer key: Implementing a Storage Spaces Direct cluster by using Windows PowerShell
 
 ## Exercise 1: Implementing a Storage Spaces Direct cluster by using Windows PowerShell
 

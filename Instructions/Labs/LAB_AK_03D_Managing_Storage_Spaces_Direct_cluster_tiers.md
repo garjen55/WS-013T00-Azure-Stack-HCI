@@ -1,10 +1,10 @@
 ---
 lab:
-    title: 'Lab E: Managing Storage Spaces Direct cluster tiers'
+    title: 'Lab D: Managing Storage Spaces Direct cluster tiers'
     type: 'Answer Key'
     module: 'Module 3: Planning for and implementing Azure Stack HCI Storage'
 ---
-# Lab E answer key: Managing Storage Spaces Direct cluster tiers
+# Lab D answer key: Managing Storage Spaces Direct cluster tiers
 
 ## Exercise 1: Managing Storage Spaces Direct cluster tiers
 

@@ -1,10 +1,10 @@
 ---
 lab:
-    title: 'Lab D: Managing and monitoring resiliency of a Storage Spaces Direct cluster'
+    title: 'Lab C: Managing and monitoring resiliency of a Storage Spaces Direct cluster'
     type: 'Answer Key'
     module: 'Module 3: Planning for and implementing Azure Stack HCI Storage'
 ---
-# Lab D answer key: Managing and monitoring resiliency of a Storage Spaces Direct cluster
+# Lab C answer key: Managing and monitoring resiliency of a Storage Spaces Direct cluster
 
 ## Exercise 1: Managing and monitoring resiliency of a Storage Spaces Direct cluster
 

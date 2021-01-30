@@ -1,9 +1,9 @@
 ﻿---
 lab:
-    title: 'Lab E: Managing Storage Spaces Direct cluster tiers'
+    title: 'Lab D: Managing Storage Spaces Direct cluster tiers'
     module: 'Module 3: Planning for and implementing Azure Stack HCI Storage'
 ---
-# Lab E: Managing Storage Spaces Direct cluster tiers
+# Lab D: Managing Storage Spaces Direct cluster tiers
 
 ## Scenario
 

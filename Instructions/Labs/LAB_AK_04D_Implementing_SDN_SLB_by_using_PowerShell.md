@@ -1,6 +1,6 @@
 ---
 lab:
-    title: 'Lab D: Implementing SDN Software Load Balancing with private virtual IP by using PowerShell'
+    title: 'Lab A: Deploying Software-Defined Networking'
     type: 'Answer Key'
     module: 'Module 4: Planning for and Implementing Azure Stack HCI Networking'
 ---
