@@ -111,7 +111,7 @@ The main tasks for this exercise are as follows:
    > **Note:** You might need to close and re-open the browser page displaying the Windows Admin Center interface to account for the installation of the **Data Deduplication** role service. 
 
 1. From the panel displaying configuration of the **Volume02-map70** volume, expand its size to **200 GB**.
-1. Review the settings of the volume **Volume02-map70**, including **Optional features**, and verify that it contains **Dual parity** and **Three-way mirror**.
+1. Review the settings of the volume **Volume02-map70**, including **Optional features**, and verify that it contains **Dual parity** and **Three-way mirror** under **Storage Tiers**.
 
    > **Note:** You have the option of enabling or disabling encryption and compression, but it's not possible to modify integrity checksum or resiliency settings after the volume is created.
 
