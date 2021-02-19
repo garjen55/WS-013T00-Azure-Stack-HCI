@@ -71,7 +71,7 @@ The main tasks for this exercise are as follows:
 
 1. On the lab VM, in the **Administrator: Windows PowerShell ISE** window, from the **script** pane, run the **F:\\WSLab-master\\Scripts\\3_Deploy.ps1** script to provision VMs for the Storage Spaces Direct environment.
 
-   > **Note:** The script should complete in about 10 minutes.
+   > **Note:** For the Telemetry prompt select **None**. The script should complete in about 10 minutes.
 
 1. After the script completes, in the **Administrator: Windows PowerShell ISE** window, from the **console** pane, run the following command to start the newly provisioned VMs that will host the Storage Spaces Direct environment:
 
