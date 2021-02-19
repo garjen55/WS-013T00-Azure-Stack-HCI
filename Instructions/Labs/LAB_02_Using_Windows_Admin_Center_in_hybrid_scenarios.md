@@ -305,6 +305,9 @@ The main tasks for this exercise are as follows:
 1. Within the console session to the **WSLabOnboard-DC** VM, in the browser window displaying the Azure portal, navigate back to the blade displaying the Log Analytics workspace you were reviewing in the first task of this exercise.
 1. On the Log Analytics workspace blade, in the **General** section, select **Workspace summary**.
 1. On the **Overview** blade, review the list of solutions that you implemented in the previous exercise and navigate to the **Service Map** blade.
+
+   >**Note**: It may take several minutes for the **Service Map** blade to appear.
+
 1. On the **Service Map** blade, on the **Machines** tab, in the list of monitored servers, select **S2D1** (one of the nodes of the Storage Spaces Direct cluster), zoom into the diagram in the center of the blade, and then review the **Summary** pane on the right-hand side of the blade.
 1. With the **S2D1** server selected, display each of the sections on the right-hand side of the pane, including **Summary**, **Properties**, **Alerts**, **Log Events**, **Performance**, **Security**, and **Updates**.
 
@@ -349,7 +352,7 @@ The main tasks for this exercise are as follows:
 
 1. Within the console session to the **WSLabOnboard-DC** VM, in the browser displaying the Azure portal, navigate back to the blade displaying the Log Analytics workspace you were reviewing in the previous exercise.
 1. On the Log Analytics workspace blade, navigate to the list of example queries.
-1. From the list of example queries, load the **Missing security or critical updates** into editor window.
+1. From the list of example queries, load the **Missing security or critical updates** from the **Virtual Machine** section into editor window.
 1. In the editor window, remove the line '| summarize count() by Classification', select **Run** and review results of the query.
 
    >**Note**: the query lists all of missing security or critical updates.
@@ -411,8 +414,8 @@ The main tasks for this exercise are as follows:
 
 ### Task 1: Deprovision the Azure resources
 
-1. Switch to the Remote Desktop session to lab VM.
-1. Within the Remote Desktop session to lab VM, start a browser, navigate to the Azure portal, and then sign in with the Owner or Contributor role in the Azure subscription you will be using in this lab.
+1. Switch to the lab VM.
+1. Start a browser, navigate to the Azure portal, and then sign in with the Owner or Contributor role in the Azure subscription you will be using in this lab.
 1. Within the Azure portal, start a PowerShell session in Cloud Shell.
 1. From the Cloud Shell pane, run the following to remove all Azure resources you provisioned in this lab:
 
@@ -423,7 +426,7 @@ The main tasks for this exercise are as follows:
 
 ### Task 2: Deprovision the lab resources
 
-1. Within the Remote Desktop session to lab VM, start Windows PowerShell ISE as Administrator.
+1. On the lab VM, start Windows PowerShell ISE as Administrator.
 1. From the PowerShell ISE window, run the **F:\\WSLab-master\\Scripts\\Cleanup.ps1** script to remove all VMs provisioned in this lab.
 
 ### Results
