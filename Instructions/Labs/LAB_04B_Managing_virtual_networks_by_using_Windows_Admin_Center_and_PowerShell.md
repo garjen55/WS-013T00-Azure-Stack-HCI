@@ -38,11 +38,11 @@ The main tasks for this exercise are as follows:
 
 ### Task 1: Connect to the SDN infrastructure by using Windows Admin Center
 
-1. From the console session to the **SDNExpress2019-Management** VM, install the Chrome browser by using **C:\\Library\\chrome_installer.exe**.
+1. From the lab VM, use the copy and paste functionality of the Hyper-V console session to copy F:\Source\ChromeStandaloneSetup64.exe to the C:\Library directory in the SDNExpress2019-Management VM. Within the console session to the SDNExpress2019-Management virtual machine (VM), switch to the File Explorer window displaying the content of the C:\Library folder and use the **ChromeStandaloneSetup64.exe** to install the Chrome browser. Also, install the **WindowsAdminCenter.exe** from C:\Library using all default settings except use port **9999**.
 
 1. In the Chrome browser, navigate to the Windows Admin Center at `https://management:9999` and, if prompted to authenticate, sign in as **CORP\\LabAdmin** with **LS1setup!** as the password.
 
-   > **Note**: This URL designates the local installation of **Windows Admin Center** on the management VM.
+   > **Note**: This URL designates the local installation of **Windows Admin Center** on the management VM. If Chrome initially refuses the connection to `https://management:9999` then try to connect to the URL with IE and then try Chrome again.
 
 1. In the **Windows Admin Center** interface, add a connection to the `sddc01.corp.contoso.com` cluster and the Network Controller REST URI at `https://NCCLUSTER.corp.contoso.com`. If prompted, authenticate by using the **CORP\\LabAdmin** and **LS1setup!** credentials.
 
