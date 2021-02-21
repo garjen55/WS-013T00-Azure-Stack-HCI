@@ -95,7 +95,7 @@ The main tasks for this exercise are as follows:
 1. Copy the **Scenario.ps1** and **MultiNodeConfig.psd1** files from **F:\\WSLab-master\\Scenarios\\SDNExpress with Windows Admin Center** to **F:\\WSLab-master\\Scripts**.
 1. From the Windows PowerShell ISE window, run the **F:\\WSLab-master\\Scripts\\3_Deploy.ps1** script to provision **SDNExpress2019-DC** based on the **DC** VM and the remaining VMs for the SDN environment.
 
-   > **Note**: The script should complete in about 7 minutes.
+   > **Note**: Select **None** at the telemetry prompt. The script should complete in about 7 minutes.
 
 1. In the Windows PowerShell ISE window, open the **F:\\WSLab-master\\Scripts\\Scenario.ps1** script, remove all content following the line **128**, starting from `# ENDING Run from Hyper-V Host ENDING #`, and then save the modified file as **Scenario_Part1.ps1**.
 
