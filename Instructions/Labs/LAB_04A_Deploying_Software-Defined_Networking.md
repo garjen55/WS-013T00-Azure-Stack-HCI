@@ -133,7 +133,7 @@ The main tasks for this exercise are as follows:
    ```
 
 1. Copy **F:\\WSLab-master\\Scripts\\Scenario.ps1** from the lab VM to **C:\\Library** on the **SDNExpress2019-Management** VM.
-1. Within the console session to the **SDNExpress2019-Management** VM, from the Administrator: Windows PowerShell ISE window, open the **C:\\Library\\Scenario.ps1** script, save its content from the line 136, starting from the line above `# Run from DC / VMM #` onward as **Scenario_Part2.ps1**, and then run it to configure the SDN VMs.
+1. Within the console session to the **SDNExpress2019-Management** VM, from the Administrator: Windows PowerShell ISE window, open the **C:\\Library\\Scenario.ps1** script, save its content from the line 136, starting from the line above `# Run from DC / VMM #` onward as **Scenario_Part2.ps1**.  Locate the line around line 240 that reads **Expand-Archive -Path C:\SDN-Master.zip -DestinationPath C:\Library**.  Highlight that line and use **F8** to run just that selected line. Then remark out that line by placing a **#** at the beginning of the line and save the file.  Then, open the **SDNExpressModule.psm1** file in the **c:\Library\SDN-Master\SDNExpress\Scripts** folder. Locate the line around line 2652 that reads **("ServerDatacenterCor", "ServerDatacenter", "ServerAzureStackHCICor")** and replace that portion with **("ServerDatacenterEvalCor", "ServerDatacenterCor", "ServerDatacenter", "ServerAzureStackHCICor")** and save the file. Now, run the **Scenario_Part2.ps1** script.
 
    > **Note**: You must run this part of the scenario script from the management VM.
 
