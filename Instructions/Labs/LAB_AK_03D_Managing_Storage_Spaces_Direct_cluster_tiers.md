@@ -42,7 +42,7 @@ lab:
 
 1. On the lab VM, in the **Administrator: Windows PowerShell ISE** window, open and run the **F:\\WSLab-master\\Scripts\\3_Deploy.ps1** script to provision VMs for the Storage Spaces Direct environment.
 
-   > **Note:** The script should complete in about 15 minutes. When prompted to **Press enter to continue**, select the **Enter** key.
+   > **Note:** Select **None** at the telemetry prompt. The script should complete in about 15 minutes. When prompted to **Press enter to continue**, select the **Enter** key.
 
 1. After the script completes, in the **Administrator: Windows PowerShell ISE** window, from the **console** pane, run the following command to start the newly provisioned VMs that will host the Storage Spaces Direct environment:
 
@@ -165,7 +165,7 @@ lab:
    }
    ```
 
-   > **Note:** Wait for the script to complete before you proceed to the next task. The script should take about 10 minutes to complete.
+   > **Note:** Wait for the script to complete before you proceed to the next task. The script should take about 10 minutes to complete. Disregard any errors or warnings.
 
 1. To generate a text file, you will use to import the list of Storage Spaces Direct clusters into Windows Admin Center, in the console session to the **WSLab-Management** VM, from the **console** pane of the **Administrator: Windows PowerShell ISE** window, run the following command:
 
