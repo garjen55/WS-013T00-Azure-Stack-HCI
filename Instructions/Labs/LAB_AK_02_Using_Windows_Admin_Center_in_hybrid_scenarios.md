@@ -43,7 +43,7 @@ lab:
 
 1. In the PowerShell ISE window, open and run the **F:\\WSLab-master\\Scripts\\3_Deploy.ps1** script to VMs for the lab environment.
 
-   >**Note**: The script should complete in about 7 minutes. When you receive the prompt **Press enter to continue**, select the **Enter** key.
+   >**Note**: For the Telemetry Level prompt, select the default setting of None. The script should complete in about seven minutes. For the prompt to start the VMs, select All to Start the VMs. When prompted with Press enter to continue, select Enter.
 
 ## Exercise 2: Integrating hyperconverged infrastructure with Azure services
 
@@ -71,9 +71,7 @@ lab:
 
    >**Note**: Ignore error messages regarding aborted I/O operation.
 
-1. Within the console session to the **WSLabOnboard-DC** VM, in the PowerShell ISE window, in the **C:\\Library\\Scenario.ps1** file in the script pane, select the third part of the script between the lines **63** and **72** marked as **#region Install Edge**, and then run that part of the script either by selecting the **F8** key or selecting the **Run selection** button in the toolbar of the PowerShell ISE window.
-
-   >**Note**: This part of the script installs locally the Microsoft Edge based on Chromium browser.
+1. Install the Microsoft Edge based on Chromium browser.
 
 1. Within the console session to the **WSLabOnboard-DC** VM, complete the Microsoft Edge installation by selecting **Get started**, following subsequent prompts, and then closing the browser window.
 
@@ -152,7 +150,7 @@ lab:
    Test-Cluster -Node 'S2D1','S2D2','S2D3','S2D4' -Include 'Storage Spaces Direct', 'Inventory', 'Network', 'System Configuration'
    ```
 
-   >**Note**: Ignore network validation errors. That's expected.
+   >**Note**: In order to run Test-Cluster from the **WSLabOnboard-DC** VM, you will need to install the Failover Clustering feature and restart the **WSLabOnboard-DC** VM.  Ignore cluster validation errors. That's expected.
 
 1. Within the console session to the **WSLabOnboard-DC** VM, in the PowerShell ISE window, from the console pane, run the following cmdlet to create a new cluster consisting of the four VMs in the lab environment (**S2D1**, **S2D2**, **S2D3**, and **S2D4**):
 
@@ -243,7 +241,10 @@ lab:
 
    >**Note**: Wait until the **RegistrationState** is listed as **Registered**.
 
-1. Within the console session to the **WSLabOnboard-DC** VM, switch to the PowerShell ISE window. In the **C:\\Library\\Scenario.ps1** file in the script pane, in line **81**, replace **OutpuMode** with **OutputMode**, and then save the change.
+1. Within the console session to the **WSLabOnboard-DC** VM, in the **Windows PowerShell ISE** window, in the **C:\\Library\\Scenario.ps1** file in the script pane, in line **77**, replace **OutpuMode** with **OutputMode**.
+
+   >**Note**: Run **Install-Module AZ** on the **WSLabOnboard-DC** VM prior to performing the next step.
+   
 1. Within the console session to the **WSLabOnboard-DC** VM, in the PowerShell ISE window, in the **C:\\Library\\Scenario.ps1** file in the script pane, select the fourth part of the script between the lines **74** and **105** marked as **#region Connect to Azure and create Log Analytics workspace if needed**, and then run that part of the script either by selecting the **F8** key or selecting the **Run selection** button in the toolbar of the PowerShell ISE window.
 
    >**Note**: This part of the script creates the Log Analytics workspace.
@@ -279,7 +280,7 @@ lab:
 
 ### Task 7: Integrate hyperconverged infrastructure with Azure Automation
 
-1. Within the console session to the **WSLabOnboard-DC** VM, switch to the PowerShell ISE window and, in the **C:\\Library\\Scenario.ps1** file in the script pane, replace line **173**
+1. Within the console session to the **WSLabOnboard-DC** VM, in the PowerShell ISE window, in the **C:\\Library\\Scenario.ps1** file in the script pane, replace line **163** 
 
    ```powershell
    $location=(Get-AzOperationalInsightsWorkspace -Name $WorkspaceName -ResourceGroupName $ResourceGroupName).Location
@@ -301,7 +302,7 @@ lab:
 
    >**Note**: Disregard error messages during registration of the Hybrid Runbook Worker. You can verify that the registration was successful by switching to the browser displaying the Azure portal interface, navigating to the **WSLabAutomationAccount** Azure Automation account you created in this task, selecting **Hybrid worker groups**, and then finally selecting the **System hybrid worker groups**. You will find the ```HRWorker01.Corp.contoso.com``` entry there, representing the newly registered Hybrid Runbook worker.
 
-1. Within the console session to the **WSLabOnboard-DC** VM, in the PowerShell ISE window, in the **C:\\Library\\Scenario.ps1** file in the script pane, replace line **296**
+1. Within the console session to the **WSLabOnboard-DC** VM, in the PowerShell ISE window, in the **C:\\Library\\Scenario.ps1** file, replace line **286** 
 
    ```powershell
    $location=(Get-AzOperationalInsightsWorkspace -Name $WorkspaceName -ResourceGroupName $ResourceGroupName).Location
@@ -338,17 +339,11 @@ lab:
 1. On the **Log Analytics workspaces** blade, select the workspace you created earlier in this lab (its name starts with the **WSLabWorkspace** prefix).
 1. On the Log Analytics workspace blade, in the **General** section, select **Logs**, and then select **Get Started**.
 1. In the **Example queries** pane, in the list of **All Queries**, select **Virtual machines**.
-1. In the list of sample queries, select **Top 10 Virtual Machines by CPU utilization**, and then select **Run**. This will automatically display the corresponding query and its results.
+1. In the list of sample queries, select **Top 10 Virtual Machines by CPU utilization in the last 7 days**, and then select **Run**. This will automatically display the corresponding query and its results.
 
    >**Note**: Review the query and the results.
 
    >**Note**: The query might result in the syntax error message if the data has not been collected yet. If so, wait for a few minutes and try again or return to this task once you complete the rest of the lab.
-
-1. In the list of sample **Queries**, in the **Virtual machines** section, select **Top 10 Virtual machines by CPU utilization**, and then select **Run**.
-
-   >**Note**: Review the query and the results.
-
-   >**Note**: The query might result in the syntax error message or contain no results if the data has not been collected yet.
 
 ### Task 2: Review Azure Automation functionality
 
@@ -369,6 +364,9 @@ lab:
 1. Within the console session to the **WSLabOnboard-DC** VM, in the browser window displaying the Azure portal, navigate back to the blade displaying the Log Analytics workspace you were reviewing in the first task of this exercise.
 1. On the Log Analytics workspace blade, in the **General** section, select **Workspace summary**.
 1. On the **Overview** blade, review the list of solutions that you implemented in the previous exercise, and then select the **Service Map** tile.
+
+   >**Note**: It may take several minutes for the **Service Map** blade to appear.
+
 1. On the **Service Map** blade, on the **Machines** tab, in the list of monitored servers, select **S2D1** (one of the nodes of the Storage Spaces Direct cluster), select the **+** icon in the diagram to the right of the server list to zoom into the diagram in the center of the blade, and then review the **Summary** pane on the right-hand side of the blade.
 1. With the **S2D1** server selected, display each of the sections on the right-hand side of the pane, including **Summary**, **Properties**, **Alerts**, **Log Events**, **Performance**, **Security**, and **Updates**.
 
@@ -406,7 +404,7 @@ lab:
 1. Within the console session to the **WSLabOnboard-DC** VM, in the browser displaying the Azure portal, navigate back to the blade displaying the Log Analytics workspace you were reviewing in the previous exercise.
 
 1. On the Log Analytics workspace blade, in the **General** section, select **Logs**.
-1. On the **Example queries** pane, scroll down to the **Virtual machines** section, select it, in the listing of queries, locate the **Missing security or critical updates** tile, hover over the **Run** button, and select **Load to editor**.
+1. On the **Example queries** pane, scroll down to the **Virtual machines** section, select it, in the listing of queries, locate the **Missing security or critical updates** from the **Virtual Machine** tile, hover over the **Run** button, and select **Load to editor**.
 1. In the editor window, remove the line '| summarize count() by Classification', select **Run** and review results of the query.
 
    >**Note**: the query lists all of missing security or critical updates.
@@ -458,8 +456,8 @@ lab:
 
 ### Task 1: Deprovision the Azure resources
 
-1. Switch to the Remote Desktop session to lab VM.
-1. Within the Remote Desktop session to lab VM, start a browser and navigate to the [Azure portal](https://portal.azure.com); when you receive a prompt, sign in with the Owner or Contributor role in the Azure subscription you will be using in this lab.
+1. Switch to the lab VM.
+1. Start a browser, navigate to the Azure portal, and then sign in with the Owner or Contributor role in the Azure subscription you will be using in this lab.
 1. Within the Azure portal, select the **Cloud Shell** icon in the toolbar of the portal interface.
 1. If you receive a prompt to select either **Bash** or **PowerShell**, select **PowerShell**.
 1. From the Cloud Shell pane, run the following to remove all Azure resources you provisioned in this lab:
@@ -471,5 +469,5 @@ lab:
 
 ### Task 2: Deprovision the lab resources
 
-1. Within the Remote Desktop session to lab VM, start Windows PowerShell ISE as Administrator.
+1. On the lab VM, start Windows PowerShell ISE as Administrator.
 1. In the PowerShell ISE window, open and run the **F:\\WSLab-master\\Scripts\\Cleanup.ps1** script to remove all VMs provisioned in this lab.
