@@ -65,7 +65,7 @@ The main tasks for this exercise are as follows:
 
 1. On the lab VM, in the **Administrator: Windows PowerShell ISE** window, open and run the **F:\\WSLab-master\\Scripts\\3_Deploy.ps1** script to provision VMs for the Storage Spaces Direct environment.
 
-   > **Note:** The script should complete in about 15 minutes.
+   > **Note:** Select **None** at the Telemetry prompt. The script should complete in about 15 minutes.
 
 1. When the script completes, in the **Administrator: Windows PowerShell ISE** window, run the following command to start the newly provisioned VMs that will host the Storage Spaces Direct environment:
 
@@ -203,8 +203,8 @@ The main tasks for this exercise are as follows:
 
    > **Note:** It might take a few minutes before the storage pool reaches the **Failed** status.
 
-1. In **Failover Cluster Manager**, review the cluster's critical events, and locate the most recent critical event that references the storage pool failure resulting from a lack of quorum of healthy disks.
-1. Switch to the lab VM, and then in the Hyper-V Manager console, start the VM that you shut down earlier in this exercise.
+1. In **Failover Cluster Manager**, select **Show Critical Events** to review the cluster's critical events, and locate the most recent critical event that references the storage pool failure resulting from a lack of quorum of healthy disks.
+1. Switch to the lab VM, and then in the Hyper-V Manager console, start the VMs that you shut down earlier in this exercise.
 1. Switch to the **WSLab-Management** VM, and in **Failover Cluster Manager**, bring the **Cluster Pool 1** online.
 
 ### Task 5: Explore metadata of a volume

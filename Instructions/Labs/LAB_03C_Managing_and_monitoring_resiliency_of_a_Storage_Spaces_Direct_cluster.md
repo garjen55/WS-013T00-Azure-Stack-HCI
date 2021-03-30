@@ -80,7 +80,7 @@ The main tasks for this exercise are as follows:
 
 1. In the **Administrator: Windows PowerShell ISE** window, open and run the **F:\\WSLab-master\\Scripts\\3_Deploy.ps1** script to provision VMs for the Storage Spaces Direct environment.
 
-   > **Note:** The script should complete in about 10 minutes.
+   > **Note:** Select **None** at the Telemetry prompt. The script should complete in about 10 minutes.
 
 1. When the script completes, in the **Administrator: Windows PowerShell ISE** window, run the following command to start the newly provisioned VMs that will host the Storage Spaces Direct environment:
 
@@ -269,7 +269,7 @@ The main tasks for this exercise are as follows:
    New-Volume -StoragePoolFriendlyName s2d* -FriendlyName WithoutTier -FileSystem CSVFS_ReFS -Size 1TB -ResiliencySettingName Mirror -CimSession $clusterName
    ```
 
-1. In the **WSLab-Management** VM console session, within the Windows Admin Center browser window, navigate to the pane displaying the **WithoutTier** volume properties.
+1. In the **WSLab-Management** VM console session, refresh the Windows Admin Center browser window and navigate to the pane displaying the **WithoutTier** volume properties.
 1. On the **WithoutTier** volume pane, note that **Fault domain awareness** is set to **Rack**.
 
    > **Note:** The actual **FaultDomainAwareness** property is defined on the virtual disk level.
