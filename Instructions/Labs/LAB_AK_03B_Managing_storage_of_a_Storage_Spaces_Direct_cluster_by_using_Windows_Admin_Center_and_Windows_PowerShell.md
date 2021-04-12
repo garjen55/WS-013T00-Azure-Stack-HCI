@@ -24,11 +24,11 @@ lab:
 1. In the browser window displaying the Windows Admin Center interface, on the `s2d-cluster.corp.contoso.com` page, in the **Networking** section, select **Virtual switches**, on the **Virtual switches** panel, note that each node is connected to an external switch named **SETSwitch**, select one of the **SETSwitch** entries, and then select **Settings**.
 1. On the **Settings for SETSwitch** panel, review the list of attached network adapters and the load balancing algorithm (set to **Hyper-V port**), and then select **Close**.
 1. In the browser window displaying the Windows Admin Center interface, on the `s2d-cluster.corp.contoso.com` page, select **Settings**.
-1. On the **Settings** panel, select **Storage pools** and verify that the cluster contains a single storage pool.
+1. On the **Settings** panel, select **Storage Spaces and pools** and verify that the cluster contains a single storage pool.
 
    > **Note:** You have the option to assign an arbitrary name to the storage pool.
 
-1. On the **Settings** panel, select **Storage Spaces Direct** and review the cache settings.
+1. On the **Storage Spaces and pools** page review the cache settings.
 
    > **Note:** The **Cache mode for HDD** is set by default to **Read/Write** and the **Cache mode for SSD** is set to **Write only**. You have the option to modify these settings.
 
