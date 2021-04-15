@@ -299,7 +299,7 @@ The main tasks for this exercise are as follows:
 
 1. On the lab VM, open a new browser window and navigate to the IP address you identified in the previous step and verify that you can access the default IIS home page.
 
-   > **Note**: This is the default web site installed on the lab VM, accessible via its private IP address. 
+   > **Note**: This is the default web site installed on the lab VM, accessible via its private IP address. Verify that the Windows Firewall on the lab VM is allowing inbound traffic on port 80 for all network profiles.
 
 1. Record the IP address and switch back to the console session to the **SDNExpress2019-Management** VM.
 
