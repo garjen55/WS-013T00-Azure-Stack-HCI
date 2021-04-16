@@ -77,9 +77,9 @@ lab:
 
 > **Note**: For the change to take effect, the Network Controller Host agent on the Hyper-V host where the virtual machines reside must process the corresponding policy. To expedite the change, you will restart the agent and the third virtual machine **vm-100**.
 
-1. Within the console session to the **SDNExpress2019-Management** VM, switch to the browser window displaying the Windows Admin Center. On the `sddc01.corp.contoso.com` page, in the **Tools** list, select **Servers**.
+1. Within the console session to the **SDNExpress2019-Management** VM, switch to the browser window displaying the Windows Admin Center. On the upper left hand side of the page, select **Windows Admin Center**.
 
-1. On the **Servers** panel, select the **Inventory** tab, and then select the entry representing the Hyper-V host **HV3** to which you deployed all three virtual machines.
+1. Select the the Hyper-V host **HV3** to which you deployed all three virtual machines.
 
 1. On the page displaying the properties of the Hyper-V host, in the **Tools** list, select **Services**.
 
