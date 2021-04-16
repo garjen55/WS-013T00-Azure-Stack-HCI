@@ -113,7 +113,7 @@ The main tasks for this exercise are as follows:
 
 1. Upload the **ISO** file you copied to the **C:\\Library** folder into the **VMStorage** volume.
 
-   > **Note**: Wait for the upload to complete.
+   > **Note**: Wait for the upload to complete. If the ISO file doesn't upload correctly, then from **SDNExpress2019-Management** virtual machine (VM), connect to **\\\\HV3\\c$** and paste the ISO file into the **\\\\HV3\\c$\\ClusterStorage\\VMStorage** folder.
 
 ### Task 4: Create VMs by using Windows Admin Center
 
@@ -296,9 +296,9 @@ The main tasks for this exercise are as follows:
 
 > **Note**: For the change to take effect, the Network Controller Host agent on the Hyper-V host where the VMs reside must process the corresponding policy. To expedite the change, you will restart the agent and each of the VMs.
 
-1. Within the Remote Desktop session to the **SDNExpress2019-Management** VM, switch to the browser window displaying the Windows Admin Center. From the `sddc01.corp.contoso.com` page, display the server inventory.
+1. Within the Remote Desktop session to the **SDNExpress2019-Management** VM, switch to the browser window displaying the Windows Admin Center and on the upper left hand side of the page select **Windows Admin Center**.
 
-1. From the server inventory panel, connect to the Hyper-V host (**HV3**) to which you deployed all three VMs.
+1. Select the Hyper-V host (**HV3**) to which you deployed all three VMs.
 
 1. On the page displaying the properties of the Hyper-V host, in the **Tools** list, select **Services**.
 
