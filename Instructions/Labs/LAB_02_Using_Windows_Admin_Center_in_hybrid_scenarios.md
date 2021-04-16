@@ -178,7 +178,7 @@ The main tasks for this exercise are as follows:
 
     >**Note**: Disregard any error messages regarding **No disks found to be used for cache**.
 
-1. Review the **Storage Spaces Direct** settings of the `S2DCL1.corp.contoso.com` cluster from the **Windows Admin Center** interface.
+1. Review the **Storage Spaces and Pools** settings of the `S2DCL1.corp.contoso.com` cluster from the **Windows Admin Center** interface.
 
    >**Note**: You might need to refresh the browser page to connect to the cluster.
 
@@ -220,7 +220,7 @@ The main tasks for this exercise are as follows:
 
    >**Note**: The workspace name has the **WSLabWorkspace** prefix.
 
-1. From the Log Analytics workspace blade, enable collecting data from the **System** and **Application** Windows event logs as well as all default Windows performance counters.
+1. From the Log Analytics workspace blade, enable collecting data from the **System** and **Application** Windows event logs as well as the **Processor(*)\\\% Processor Time** Windows performance counters.
 
 ### Task 7: Integrate hyperconverged infrastructure with Azure Automation
 
