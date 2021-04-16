@@ -28,7 +28,7 @@ lab:
 
    > **Note:** You have the option to assign an arbitrary name to the storage pool.
 
-1. On the **Settings** panel, select **Storage Spaces Direct** and review the cache settings.
+1. On the **Storage Spaces and pools** page review the cache settings.
 
    > **Note:** The **Cache mode for HDD** is set by default to **Read/Write** and the **Cache mode for SSD** is set to **Write only**. You have the option to modify these settings.
 
