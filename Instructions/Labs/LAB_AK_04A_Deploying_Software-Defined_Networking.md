@@ -103,7 +103,7 @@ lab:
 
 ### Task 2: Deploy the SDN infrastructure VMs
 
-   > **Note**: Make sure all of the VMs you provisioned in the previous task are running and that their operating system has been activated before you proceed to the next task. If that is not the case, start all of the VMs, sign in to each of them  using the **CORP\\LabAdmin** username and **LS1setup!** password and, from the elevated Command Prompt, run `slmgr -rearm`.
+   > **Note**: Sign in to the **DC** VM using the **CORP\\LabAdmin** username and **LS1setup!** password, run `slmgr -rearm` and restart it.
 
 1. On the lab VM, start the **Hyper-V Manager** console and establish a console session to the **SDNExpress2019-Management** VM. When prompted to sign in, provide the **CORP\\LabAdmin** username and **LS1setup!** password.
 
