@@ -80,9 +80,10 @@ The main tasks for this exercise are as follows:
    $vnet2.properties.subnets[0].Properties.AccessControlList = $acl
    $subnet = Get-NetworkControllerVirtualSubnet -VirtualNetworkId $vnet2.ResourceId -ConnectionUri $uri
    New-NetworkControllerVirtualSubnet -ConnectionUri $uri -Properties $vnet2.Properties.Subnets[0].Properties -ResourceId $subnet.ResourceId -VirtualNetworkId $vnet2.ResourceId -Force
-   
-   > **Note**: Verify that the ACL assignment was created successfully.
    ```
+
+   > **Note**: Verify that the ACL assignment was created successfully.
+   
 
 1. Switch to the Windows Admin Center interface and refresh the browser page displaying the **Access control lists > acl-100** panel.
 1. On the **Access Control List > acl-000** panel, in the **Related Tab** section, on the **Applied Virtual Subnets** tab, note the **subnet-0** entry of the **vnet-100** virtual network.
@@ -91,9 +92,9 @@ The main tasks for this exercise are as follows:
 
 > **Note**: For the change to take effect, the Network Controller Host agent on the Microsoft Hyper-V host where the VMs reside must process the corresponding policy. To expedite the change, you will restart the agent and the third VM **vm-100**.
 
-1. Within the console session to the **SDNExpress2019-Management** VM, switch to the browser window displaying the Windows Admin Center, and from the `sddc01.corp.contoso.com` page, display the server inventory.
+1. Within the console session to the **SDNExpress2019-Management** VM, switch to the browser window displaying the Windows Admin Center, and from the upper left hand side of the page, select **Windows Admin Center**.
 
-1. From the server inventory panel, connect to the Hyper-V host (**HV3**) to which you deployed all three virtual machines.
+1. Select the Hyper-V host (**HV3**) to which you deployed all three virtual machines.
 
 1. On the page displaying the properties of the Hyper-V host, in the **Tools** list, select **Services**.
 
