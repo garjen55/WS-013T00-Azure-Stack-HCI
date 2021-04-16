@@ -106,7 +106,7 @@ lab:
 1. On the **Upload** panel, select **Select files**, in the **Open** dialog box, navigate to the **C:\\Library** folder, select the ISO file, and select **Open**.
 1. Back on the **Upload** panel, select **Submit**.
 
-   > **Note**: Wait for the upload to complete.
+   > **Note**: Wait for the upload to complete. If the ISO file doesn't upload correctly, then from **SDNExpress2019-Management** virtual machine (VM), connect to **\\\\HV3\\c$** and paste the ISO file into the **\\\\HV3\\c$\\ClusterStorage\\VMStorage** folder.
 
 ### Task 4: Create virtual machines by using Windows Admin Center
 
@@ -221,7 +221,7 @@ lab:
 
 1. On the **Inventory** tab, select the check box next to each virtual machine entry, select **More**, and in the drop-down menu, select **Shut down**, and then select **Yes**.
 
-1. On the **Inventory** tab, select **vm-000**, select **Settings**, and on the **Settings for vm000** panel, select **Networks**.
+1. On the **Inventory** tab, select the check next to **vm-000**, select **Settings**, and on the **Settings for vm000** panel, select **Networks**.
 
 1. On the **Networks** panel, specify the following settings:
 
@@ -342,9 +342,9 @@ lab:
 
 > **Note**: For the change to take effect, the Network Controller Host agent on the Hyper-V host where the virtual machines reside must process the corresponding policy. To expedite the change, you will restart the agent and each of the virtual machines.
 
-1. Within the console session to the **SDNExpress2019-Management** VM, switch to the browser window displaying the Windows Admin Center, and on the `sddc01.corp.contoso.com` page, in the **Tools** list, select **Servers**.
+1. Within the console session to the **SDNExpress2019-Management** VM, switch to the browser window displaying the Windows Admin Center, and on the upper left side of the page select **Windows Admin Center**.
 
-1. On the **Servers** panel, select the **Inventory** tab, and then select the entry representing the Hyper-V host **HV3** to which you deployed all three VMs.
+1. Select the the Hyper-V host **HV3** to which you deployed all three VMs.
 
 1. On the page displaying the properties of the Hyper-V host, in the **Tools** list, select **Services**.
 
