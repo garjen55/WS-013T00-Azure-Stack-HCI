@@ -91,7 +91,7 @@ The main tasks for this exercise are as follows:
 
 > **Note**: For the change to take effect, the Network Controller Host agent on the Microsoft Hyper-V host where the VMs reside must process the corresponding policy. To expedite the change, you will restart the agent and the third VM **vm-100**.
 
-1. Within the console session to the **SDNExpress2019-Management** VM, switch to the browser window displaying the Windows Admin Center, and from the upp left hand side of the page, select **Windows Admin Center**,
+1. Within the console session to the **SDNExpress2019-Management** VM, switch to the browser window displaying the Windows Admin Center, and from the upper left hand side of the page, select **Windows Admin Center**.
 
 1. Select the Hyper-V host (**HV3**) to which you deployed all three virtual machines.
 
