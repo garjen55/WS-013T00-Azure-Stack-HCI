@@ -214,7 +214,7 @@ lab:
 
    >**Note**: Disregard an error message regarding **No disks found to be used for cache**.
 
-1. Switch back to the browser window displaying the **Windows Admin Center** interface; on the **Settings** panel of `S2DCL1.corp.contoso.com` page, select **Storage Spaces Direct**; and then examine its settings.
+1. Switch back to the browser window displaying the **Windows Admin Center** interface; on the **Settings** panel of `S2DCL1.corp.contoso.com` page, select **Storage Spaces and Pools**; and then examine its settings.
 
    >**Note**: You might need to refresh the browser page to connect to the cluster.
 
@@ -273,10 +273,10 @@ lab:
 
    >**Note**: The workspace name has the **WSLabWorkspace** prefix.
 
-1. On the Log Analytics workspace blade, in the **Settings** section, select **Advanced settings**.
-1. On the **Advanced settings** blade, select **Data**, and then select **Windows Event Logs**. In the **Collect events from the following event logs** text box, enter **System**, and then select **+**.
+1. On the Log Analytics workspace blade, in the **Settings** section, select **Agents Configuration**.
+1. In the **Windows event logs** tab, enter **System**, and then select **+ Add windows event log**.
 1. Use the procedure described in the previous step to add the **Application** log.
-1. On the **Advanced settings** blade, select **Windows Performance Counters**, select **Add the selected performance counters**, select **Save**, and then select **OK** to acknowledge that the configuration was successfully saved.
+1. On the **Agents Configuration** blade, select **Windows performance counters** tab, select **+ Add performance counter**, enter **Processor(*)\\\% Processor Time** and select **Apply**.
 
 ### Task 7: Integrate hyperconverged infrastructure with Azure Automation
 
@@ -384,8 +384,8 @@ In the list of sample queries, select **Top 10 Virtual Machines by CPU utilizati
 ### Task 1: Implement Cluster Aware Updating by using Windows Admin Center
 
 1. Within the console session to the **WSLabOnboard-DC** VM, switch back to the **Windows Admin Center** interface, and in the list of **Tools** of the `S2DCL1.corp.contoso.com` page, select **Updates**.
-1. On the **Let's get you set up** panel, select **Go for it**.
-1. On the **Cluster Aware Updating** panel, select **Check for updates**.
+1. Select **Add Cluster-Aware Updating role**.
+1. On the **Updates** panel, select **Check for updates**.
 1. Review the list of available updates without making any changes.
 
    >**Note**: You have the option to **Apply All Updates**. Do not select it.
